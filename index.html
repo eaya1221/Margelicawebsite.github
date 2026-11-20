@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maria Angelica | Personal Portfolio</title>
+    <meta name="description" content="Personal portfolio of Maria Angelica A. Gutierrez, a 1st year BSIT student.">
+    <link rel="icon"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8C%B8%3C/text%3E%3C/svg%3E">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Jost:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+
+    <link rel="stylesheet" href="style-watermelon.css" id="theme-pink">
+    <link rel="stylesheet" href="style-night.css" id="theme-night" media="not all">
+    <script>
+
+        try {
+            if (localStorage.getItem("theme") === "night") {
+                document.getElementById("theme-pink").media = "not all";
+                document.getElementById("theme-night").media = "all";
+            }
+        } catch (error) { }
+    </script>
+</head>
+
+<body>
+    <header>
+        <a class="logo" href="#home" data-tab="home">Ms. Maria Angelica A. Gutierrez</a>
+
+        <div class="header-actions">
+            <nav aria-label="Main navigation">
+                <button class="nav-link active" type="button" data-tab="home">Home</button>
+                <button class="nav-link" type="button" data-tab="about">About</button>
+                <button class="nav-link" type="button" data-tab="portfolio">Portfolio</button>
+                <button class="nav-link" type="button" data-tab="contact">Contact</button>
+            </nav>
+            <button class="theme-toggle" id="themeToggle" type="button">Night mode</button>
+        </div>
+    </header>
+
+    <main>
+
+        <section id="home" class="tab-panel active">
+            <div class="collage">
+                <img src="pic 1.jpg" alt="Personal photo 1">
+                <img src="pic 2.jpg" alt="Personal photo 2">
+                <img src="pic 3.jpg" alt="Personal photo 3">
+                <img src="pic 4.jpg" alt="Personal photo 4">
+                <img src="pic 5.jpg" alt="Personal photo 5">
+                <img src="pic 6.jpg" alt="Personal photo 6">
+            </div>
+
+            <div class="hero">
+                <div>
+                    <p class="eyebrow">WELCOME TO MY WEBSITE</p>
+                    <h1>Hello, I'm <span>Ms. Maria Angelica A. Gutierrez</span></h1>
+                    <h3>Welcome to My Personal Portfolio</h3>
+                    <p>Aspiring IT | Creative Learner</p>
+                    <button class="btn" type="button" data-tab="about">Explore More</button>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="about" class="tab-panel">
+            <div class="page-content wide">
+                <p class="eyebrow">GET TO KNOW ME</p>
+                <h2>About Me</h2>
+
+                <div class="about-grid">
+                    <aside class="about-profile">
+                        <div class="portrait"><img src="pic 6.jpg" alt="Portrait of Maria Angelica Gutierrez"></div>
+                        <h3 class="profile-name">Maria Angelica Atienza Gutierrez</h3>
+                        <p class="profile-role">BSIT Student, 1st Year</p>
+                        <p class="profile-bio">
+                            I am a creative and dedicated student with a passion for technology and innovation.
+                        </p>
+                    </aside>
+
+                    <div class="about-main">
+                        <h3 class="block-title">My Journey</h3>
+                        <ol class="timeline">
+                            <li class="timeline-item">
+                                <span class="timeline-year">Present</span>
+                                <h4>Bachelor of Science in Information Technology</h4>
+                                <p class="meta">Mindoro State University</p>
+                                <p>1st Year BSIT</p>
+                            </li>
+                            <li class="timeline-item">
+                                <span class="timeline-year">S.Y. 2025–2026</span>
+                                <h4>Senior High School Graduate</h4>
+                                <p class="meta">Puerto Galera National High School Main Campus</p>
+                                <p>
+                                    Awards: Church Ministry Award · Cultural and Theater Arts Award ·
+                                    Champion, Games of the General (GG)
+                                </p>
+                                <p><em>“When the time is right, I, the Lord will make it happen.”</em></p>
+                            </li>
+                            <li class="timeline-item">
+                                <span class="timeline-year">S.Y. 2022–2023</span>
+                                <h4>Junior High School Graduate (Grade 10)</h4>
+                                <p class="meta">Puerto Galera Academy</p>
+                                <p>Graduated from a Catholic school.</p>
+                            </li>
+                        </ol>
+
+                        <h3 class="block-title">What I Love</h3>
+                        <ul class="chips">
+                            <li>Basic Coding</li>
+                            <li>HTML and CSS</li>
+                            <li>Using Computers</li>
+                            <li>Learning New Things About Technology</li>
+                            <li>Dancing and Listening to Music</li>
+                            <li>Exploring New Apps</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="portfolio" class="tab-panel">
+            <div class="page-content wide">
+                <p class="eyebrow">WHAT I CAN DO</p>
+                <h2>My Projects</h2>
+                <p class="intro-text">
+                    A few projects I have built and designed while learning web design and
+                    developing my skills as a 1st Year BSIT student.
+                </p>
+
+                <div class="showcase">
+
+                    <article class="project">
+                        <div class="project-media">
+                            <img class="img-day" src="project-1.svg"
+                                alt="Illustration of my personal portfolio website">
+                            <img class="img-night" src="project-1-night.svg"
+                                alt="Illustration of my personal portfolio website">
+                        </div>
+                        <div class="project-body">
+                            <ul class="chips small">
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                            </ul>
+                            <h3>Personal Portfolio Website</h3>
+                            <p>
+                                A one-page website with Home, About, Portfolio and Contact tabs. It has a photo
+                                collage, a pink color palette, elegant fonts, lily backgrounds, and a Day and
+                                Night theme switch.
+                            </p>
+                        </div>
+                    </article>
+
+
+                    <article class="project">
+                        <div class="project-media">
+                            <img class="img-day" src="project-2.svg" alt="Illustration of a dance showcase page">
+                            <img class="img-night" src="project-2-night.svg"
+                                alt="Illustration of a dance showcase page">
+                        </div>
+                        <div class="project-body">
+                            <ul class="chips small">
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>In progress</li>
+                            </ul>
+                            <h3>Dance Showcase Page</h3>
+                            <p>
+                                A themed landing page about my love of dancing, with a photo gallery, a short
+                                story of my dance journey, and a section for performances and events.
+                            </p>
+                        </div>
+                    </article>
+
+
+                    <article class="project">
+                        <div class="project-media">
+                            <img class="img-day" src="project-3.svg"
+                                alt="Illustration of the Study Buddy mobile app screens">
+                            <img class="img-night" src="project-3-night.svg"
+                                alt="Illustration of the Study Buddy mobile app screens">
+                        </div>
+                        <div class="project-body">
+                            <ul class="chips small">
+                                <li>UI Design</li>
+                                <li>Mobile App</li>
+                                <li>In progress</li>
+                            </ul>
+                            <h3>Study Buddy App Concept</h3>
+                            <p>
+                                A mobile app mockup for students, with a login screen, a home dashboard, and a
+                                task list. It is the first step toward my dream of creating my own app.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="contact" class="tab-panel">
+            <div class="page-content wide">
+                <p class="eyebrow">LET'S CONNECT</p>
+                <h2>Contact Me</h2>
+                <p class="intro-text">
+                    Have a question or just want to say hello? Send me a message below or reach me
+                    through the details here.
+                </p>
+
+                <div class="contact-panel">
+                    <ul class="contact-strip">
+                        <li>
+                            <span class="contact-label">Email</span>
+                            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mariaangelicagutz11@gmail.com" target="_blank" rel="noopener">mariaangelicagutz11@gmail.com</a>
+                        </li>
+                        <li>
+                            <span class="contact-label">Facebook</span>
+                            <a href="https://www.facebook.com/share/19rQnkD9vb/" target="_blank" rel="noopener">Eaia Gutierrez</a>
+                        </li>
+                        <li>
+                            <span class="contact-label">Location</span>
+                            <span>Sto. Niño, Puerto Galera, Oriental Mindoro</span>
+                        </li>
+                    </ul>
+
+                    <!-- Replace YOUR_FORM_ID with the code from formspree.io so messages reach your email -->
+                    <form action="https://formspree.io/f/YOUR_FORM_ID" method="post" class="contact-form">
+                        <div class="form-row">
+                            <div class="field">
+                                <label for="name">Your name</label>
+                                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                            </div>
+                            <div class="field">
+                                <label for="email">Your email</label>
+                                <input type="email" id="email" name="email" placeholder="Enter your email address"
+                                    required>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Write your message here..."
+                                required></textarea>
+                        </div>
+                        <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="display:none"
+                            aria-hidden="true">
+                        <button type="submit" class="btn">Send message</button>
+                        <p class="form-status" role="status" aria-live="polite"></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 My Personal Portfolio | All Rights Reserved</p>
+    </footer>
+
+    <script>
+        const tabButtons = document.querySelectorAll("[data-tab]");
+        const tabPanels = document.querySelectorAll(".tab-panel");
+
+        function openTab(tabName) {
+            tabPanels.forEach(panel => {
+                panel.classList.toggle("active", panel.id === tabName);
+            });
+
+            document.querySelectorAll(".nav-link").forEach(button => {
+                button.classList.toggle("active", button.dataset.tab === tabName);
+            });
+
+            history.replaceState(null, "", "#" + tabName);
+            window.scrollTo({top: 0, behavior: "smooth"});
+        }
+
+        tabButtons.forEach(button => {
+            button.addEventListener("click", event => {
+                event.preventDefault();
+                openTab(button.dataset.tab);
+            });
+        });
+
+        // Day / Night theme switch
+        const themePink = document.getElementById("theme-pink");
+        const themeNight = document.getElementById("theme-night");
+        const themeButton = document.getElementById("themeToggle");
+
+        function setTheme(name) {
+            const night = name === "night";
+            themePink.media = night ? "not all" : "all";
+            themeNight.media = night ? "all" : "not all";
+            themeButton.textContent = night ? "Day mode" : "Night mode";
+            try {localStorage.setItem("theme", name);} catch (error) { }
+        }
+
+        themeButton.addEventListener("click", () => {
+            setTheme(themeNight.media === "all" ? "pink" : "night");
+        });
+
+
+        themeButton.textContent = themeNight.media === "all" ? "Day mode" : "Night mode";
+
+
+        const contactForm = document.querySelector(".contact-form");
+        const formStatus = document.querySelector(".form-status");
+
+        contactForm.addEventListener("submit", async event => {
+            event.preventDefault();
+            const sendButton = contactForm.querySelector("button[type='submit']");
+            formStatus.className = "form-status";
+
+            if (contactForm.action.includes("YOUR_FORM_ID")) {
+                formStatus.textContent = "The form isn't connected to an email yet.";
+                formStatus.classList.add("error");
+                return;
+            }
+
+            sendButton.disabled = true;
+            formStatus.textContent = "Sending...";
+
+            try {
+                const response = await fetch(contactForm.action, {
+                    method: "POST",
+                    body: new FormData(contactForm),
+                    headers: {Accept: "application/json"}
+                });
+                if (!response.ok) throw new Error("Request failed");
+                formStatus.textContent = "Thank you! Your message has been sent.";
+                formStatus.classList.add("success");
+                contactForm.reset();
+            } catch (error) {
+                formStatus.textContent = "Sorry, something went wrong. Please try again or email me directly.";
+                formStatus.classList.add("error");
+            }
+            sendButton.disabled = false;
+        });
+
+
+        const initialTab = window.location.hash.replace("#", "");
+        const validTabs = ["home", "about", "portfolio", "contact"];
+        openTab(validTabs.includes(initialTab) ? initialTab : "home");
+    </script>
+</body>
+
+</html>
